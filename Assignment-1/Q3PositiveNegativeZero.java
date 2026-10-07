@@ -5,17 +5,16 @@ public class Q3PositiveNegativeZero {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter an integer: ");
+        System.out.print("Enter an number: ");
         int n = sc.nextInt();
 
-        if (n > 0) {
+        if (n > 0)
             System.out.println("Positive");
-        } else if (n < 0) {
+        else if (n < 0)
             System.out.println("Negative");
-        } else {
+        else 
             System.out.println("Zero");
-        }
-
+        
         sc.close();
     }
 }

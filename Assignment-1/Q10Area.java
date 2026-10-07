@@ -1,28 +1,29 @@
 import java.util.Scanner;
-public class Q10Area {
-    double pi=3.14;
-    double a;
-    double cal_area(int r)
-    {
-        a=pi*r*r;
-        return a;
-    }
-    
-    void display()
-    {
-        System.out.println("Area of circle is: "+a);
+
+class Q10Area {
+
+    final double pi = Math.PI;
+    int r;
+    double area;
+
+    void cal_area() {
+        area = pi * r * r;
     }
 
-    public static void main(String[] args){
+    void display() {
+        System.out.println("Area of circle = " + area);
+    }
 
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter radius of circle: ");
-        int r = sc.nextInt();
-        
-        Q10Area obj=new Q10Area();
+    public static void main(String[] args) {
 
-        obj.cal_area(r);
-        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter radius: ");
+        Q10Area obj = new Q10Area();
+
+        obj.r = sc.nextInt();
+
+        obj.cal_area();
         obj.display();
 
         sc.close();

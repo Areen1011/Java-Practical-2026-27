@@ -8,7 +8,12 @@ public class Q7ATM {
 
         double balance = 5000;
 
-        System.out.print("1. Balance\n2. Deposit Money\n3. Withdraw Money\n4. Exit\nEnter your choice: ");
+        System.out.println("1. Balance");
+        System.out.println("2. Deposit");
+        System.out.println("3. Withdraw");
+        System.out.println("4. Exit");
+
+        System.out.print("Enter choice: ");
         int choice = sc.nextInt();
 
         switch (choice) {
@@ -18,35 +23,30 @@ public class Q7ATM {
                 break;
 
             case 2:
-                System.out.print("Enter deposit amount: ");
+                System.out.print("Enter amount: ");
                 double deposit = sc.nextDouble();
-
-                balance += deposit;
-
-                System.out.println("Money deposited successfully.");
-                System.out.println("Updated Balance = " + balance);
+                balance = balance + deposit;
+                System.out.println("Balance = " + balance);
                 break;
 
             case 3:
-                System.out.print("Enter withdrawal amount: ");
+                System.out.print("Enter amount: ");
                 double withdraw = sc.nextDouble();
 
                 if (withdraw <= balance) {
-                    balance -= withdraw;
-
-                    System.out.println("Please collect your money.");
-                    System.out.println("Remaining Balance = " + balance);
+                    balance = balance - withdraw;
+                    System.out.println("Balance = " + balance);
                 } else {
-                    System.out.println("Insufficient Balance.");
+                    System.out.println("Insufficient Balance");
                 }
                 break;
 
             case 4:
-                System.out.println("Thank you for using ATM.");
+                System.out.println("Exit");
                 break;
 
             default:
-                System.out.println("Invalid Choice.");
+                System.out.println("Invalid Choice");
         }
 
         sc.close();

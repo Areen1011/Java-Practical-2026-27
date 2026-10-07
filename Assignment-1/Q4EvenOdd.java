@@ -6,14 +6,12 @@ public class Q4EvenOdd {
 
 		System.out.println("Enter a number: ");
         
-        int num = sc.nextInt();
+        int n = sc.nextInt();
 		
-        if(num % 2 == 0){
-			System.out.println("Even number");	
-		}
-		else{
-			System.out.println("Odd number");	
-		}
+        if(n % 2 == 0)
+			System.out.println("Even");	
+		else
+			System.out.println("Odd");	
 
         sc.close();
 	}

@@ -12,9 +12,8 @@ class Q6FirstLastDigitDisplay {
         
         int first = num;
         
-        while (first >= 10) {
+        while (first >= 10)
             first /= 10;
-        }
         
         int last = num % 10;
         
