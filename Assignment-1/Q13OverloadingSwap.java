@@ -1,26 +1,29 @@
 public class Q13OverloadingSwap {
+    int a, b;
+    void s(){
+        int temp=a;
+        a=b;
+        b=temp;
+    }
     void swap(int a, int b) {
-        System.out.println("Before swapping: " + a + " " + b);
         int temp = a;
         a = b;
         b = temp;
-        System.out.println("After swapping: " + a + " " + b);
+        System.out.println(a + " " + b);
     }
 
     void swap(float a, float b) {
-        System.out.println("Before swapping: " + a + " " + b);
         float temp = a;
         a = b;
         b = temp;
-        System.out.println("After swapping: " + a + " " + b);
+        System.out.println(a + " " + b);
     }
 
     void swap(char a, char b) {
-        System.out.println("Before swapping: " + a + " " + b);
         char temp = a;
         a = b;
         b = temp;
-        System.out.println("After swapping: " + a + " " + b);
+        System.out.println(a + " " + b);
     }
 
     public static void main(String[] args) {

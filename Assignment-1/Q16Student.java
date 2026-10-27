@@ -1,4 +1,3 @@
-
 interface CalculateResult {
     void calculateTotal();
     void calculatePercentage();
